@@ -1,0 +1,48 @@
+body {
+  background: rgb(38, 41, 34);
+}
+
+.reveal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #FFF;
+}
+
+.reveal h1 {
+  text-transform: none;
+}
+
+.reveal h2 {
+  text-transform: none;
+}
+
+.reveal h3 {
+  text-transform: none;
+}
+
+.box-grass {
+  position: fixed;
+  bottom: 0px;
+  height: 60vh;
+  width: 100vw;
+  z-index: +10;
+}
+
+.reveal section img {
+  background: unset;
+}
+
+.reveal table th, .reveal table td {
+  border-bottom: unset;
+}
+
+.reveal pre {
+  box-shadow: unset;
+}
+
+.reveal a:hover img {
+  background: unset;
+  border-color: unset;
+  box-shadow: unset;
+}
