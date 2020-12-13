@@ -102,6 +102,7 @@ let green;
 let grey;
 
 function initGreen() {
+  /*
   green = new Grass("grass_green");
   document.getElementById("grass_green").style.height = "60vh";
   green.configuration = {
@@ -115,6 +116,7 @@ function initGreen() {
     grey: false,
   };
   green.run();
+  */
 }
 
 function initGrey() {
