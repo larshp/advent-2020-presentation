@@ -117,8 +117,8 @@ Puzzle answer is 1721 * 299 = <u>514579</u>
     <li>Share code on <a href="https://github.com/larshp/abap-advent-2020">GitHub</a></li>
     <li>Run on <a href="https://nodejs.org/en/">Node.js</a></li>
     <li><i><a href="https://www.youtube.com/watch?v=Y2xu0XULeao">Wait, what?</a></i></li>
-    <li><a href="https://www.martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a>: Run unit tests</li>
-    <li>Continuous Integration: Static analysis</li>
+    <li><a href="https://www.martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a>: Static analysis</li>
+    <li>Continuous Integration: Run unit tests</li>
   </ul>
 </section>
 
@@ -191,9 +191,12 @@ Puzzle answer is 1721 * 299 = <u>514579</u>
 <i>lint, or a linter, is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs</i>
 <br>
 <br>
-Custom open source, everything in <a href="https://www.typescriptlang.org">TypeScript</a><br>
-<br>
-<a href="https://abaplint.org">https://abaplint.org</a><br>
+<ul>
+  <li>Open Source</li>
+  <li>MIT License</li>
+  <li><a href="https://www.typescriptlang.org">TypeScript</a></li>
+  <li><a href="https://abaplint.org">abaplint.org</a></li>
+</ul>
 </section>
 
 <section>
@@ -221,21 +224,31 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 </section>
 
 <section>
+  <h2>Continuous Integration?</h2>
+  <ul>
+    <li>Use CI that is close to the code, <a href="https://github.com/marketplace">GitHub Actions/Apps</a></li>
+    <li>Exact + Fast feedback</li>
+  <ul>
+  <img src="img/suggested_change.png" height="300" class="plain">
+</section>
+
+<section>
   <h1>3. Automatic Downport</a>
 </section>
 
 <section>
-  <a href="https://rules.abaplint.org/downport/">https://rules.abaplint.org/downport/</a>
+  <table><tr><td>
   <pre>
-    CLASS lcl_bar DEFINITION.
-    ENDCLASS.
-    CLASS lcl_bar IMPLEMENTATION.
-    ENDCLASS.
+CLASS lcl_bar DEFINITION.
+ENDCLASS.
+CLASS lcl_bar IMPLEMENTATION.
+ENDCLASS.
 
-    FORM foo.
-      DATA(lo_moo) = NEW lcl_bar( ).
-    ENDFORM.
-  </pre>
+FORM foo.
+  DATA(lo_moo) = NEW lcl_bar( ).
+ENDFORM.</pre>
+  </td></tr></table>
+  <a href="https://rules.abaplint.org/downport/">https://rules.abaplint.org/downport/</a>
   <a href="https://playground.abaplint.org">https://playground.abaplint.org</a>
 </section>
 
@@ -274,6 +287,20 @@ ENDLOOP.</pre><hr>
 </section>
 
 <section>
+  <h2>Automatic Upport</h2>
+  <iframe width="900" height="500" src="https://rules.abaplint.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section>
+  <h2>Future Work</h2>
+  <ul>
+  <li>Serverless ABAP, <a href="https://github.com/open-abap">https://github.com/open-abap</a></li>
+  <li>Support Unit Testing of ABAP code, <a href="https://allure.abapgit.org/">https://allure.abapgit.org</a></li>
+  <li>Database Support, basic SQLite done</li>
+  </ul>
+</section>
+
+<section>
   <h2>#ABAPisNotDead</h2>
   <a href="https://larshp.github.io/advent-2020-presentation/">https://larshp.github.io/advent-2020-presentation/</a>
   <br>
@@ -300,13 +327,6 @@ ENDLOOP.</pre><hr>
 </section>
 
 <section>
-  <h2>Continuous Integration?</h2>
-    ???
-    Jeninks
-    Exact + Fast feedback
-</section>
-
-<section>
   <h1>Disclaimer</h1>
   <img src="img/const.gif" class="plain">
   <br>
@@ -314,18 +334,6 @@ ENDLOOP.</pre><hr>
   <br>
   <br>
   Test in sandbox
-</section>
-
-<section>
-  <h2>Aaand then</h2>
-  <ul>
-  <li>More quick fixes</li>
-  <li><a href="https://github.com/open-abap">Serverless ABAP</a></li>
-  <li>Automatic Upport (abapGit to 740sp08)</li>
-  <li>Automatic Downport (abapGit to 702)</li>
-  </ul>
-  <br><br>
-  <i class="fas fa-user-clock"></i>
 </section>
 
 </div>
