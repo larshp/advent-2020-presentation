@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAYSBwAAJAAAACTAAAIhAkAAJkAAACcAAADmAMAAJ8AAAefCAAAcwAAAKUAAAB2AAAVWRcAAKgAABlDGwAAqwAAAHwAAAB/AAAAggAAAIUAABk9HAAAtwAAAIgAAAC6AAAAiwAAAL0AAACOAAAAkQAAAJQAABpMHAAAlwAAB3oHAAVyBQAAnQAAAKAAAACjAAAAdAAAAKYAAACpAAAAegAAAKwAAAB9AAAPfRAAAK8AAACAAAASWBUAALUAAAC4AAAAiQAAALsAAACMAAAAjwAAA4sDAACSAAAiKSYAAJUAABdUGQAAmAAAAJsAAACeAAAAoQAAAHIAABVVFwAApAAAAHUAAAhjCQAApwAAAHgAACAwJAAArQAAAH4AABtHHgAAswAAAIQAAAC2AAAAhwAAALkAAACKAAAAvAAAAI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhAQLi4vMjJNMk8CM0kuRTIHKUpKL0saGE8aMzMLSiwBN0YVCkwwARgaGjMzQxISHAQ9Lz1MGDUyMzMzMykTNzkhCUw2FgRCMjMBNRsySzcFPEBMNgkdDU8BAT4eM003IgoCFzYkKiYfNRs2BTU3NiM4ITE2HEE2JgQ1NiE3NzZCNjxOFB4LLSg2NUQ7ORs2DzY/GUMENjY2NgI7IToCNis2QicnOjY2Nis0Ng47NzZINg82JzY2NjY2AAYDIjk2FTZHNhA2NjY2NjY2NiMMNgg2NjYpNjY2NjY2NjYlQjY2NjY2IDY2NjY2NjY2NiY2NjY2NjYRNjY2NjY2NjYoNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
   <title>ABAP Advent 2020</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha256-MCvBrhCuX8GNt0gmv06kZ4jGIi1R2QNaSkadjRzinFs=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
@@ -26,7 +25,8 @@
 </section>
 
 <section>
-Lars Hvam, <a href="https://twitter.com/LarsHvam"><i class="fa fa-twitter plain"></i> @LarsHvam</a><br>
+Lars Hvam Petersen<br>
+<a href="https://twitter.com/LarsHvam"><i class="fa fa-twitter plain"></i> @LarsHvam</a><br>
 <a href="https://heliconialabs.com">Heliconia Labs</a><br>
 </section>
 
@@ -37,20 +37,94 @@ Slides: <a href="https://larshp.github.io/advent-2020-presentation/">https://lar
 <br>
 Feel free to use the chat<br>
 <br>
-Will answer questions in the end if time permits<br>
+Will answer questions if time permits<br>
 </td></tr></table>
 </section>
 
 <section>
-  <h1>Disclaimer</h1>
-  <img src="img/const.gif" class="plain">
-  <br>
-  Open source
-  <br>
-  <br>
-  Test in sandbox
+  <h2>Advent of code?</h2>
+
+  <ul>
+  <li><a href="https://adventofcode.com">https://adventofcode.com</a></li>
+  <li>Yearly event since 2015</li>
+  <li>25 puzzles, one each day, starting December 1st</li>
+  <li>Any language(Excel, <a href="https://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>, <a href="https://www.sqlite.org">SQLite</a>, ABAP)</li>
+  <li>By Eric Wastl <a href="https://twitter.com/ericwastl"><i class="fa fa-twitter plain"></i> @ericwastl</a></li>
+  <li>Puzzle input is unique for each user</li>
+  </ul>
 </section>
 
+<section>
+  <h2>Example: 2020 Day 01</h2>
+
+Find the two entries that sum to 2020<br>
+<br>
+<tt>1721, 979, 366, 299, 675, 1456</tt><br>
+<br>
+1721 + 299 = <u>2020</u><br>
+Puzzle answer is 1721 * 299 = <u>514579</u>
+</section>
+
+<section>
+  <h2>But why?</h2>
+
+  <ul>
+  <li>Practice problem solving</li>
+  <li>Learn a new programming language</li>
+  <li>Practice TDD</li>
+  <li>Optimizing solution performance</li>
+  <li>Make your own twist</li>
+  </ul>
+</section>
+
+<section>
+  <h2>My Recommendations</h2>
+
+  <ul>
+  <li>Know your regex, <a href="https://regex101.com">https://regex101.com</a></li>
+  <li>Just submit answers, it doesnt have to be perfect</li>
+  <li>Checkout the Community:</li>
+    <ul>
+      <li><a href="https://twitter.com/search?q=%23AdventOfCode">Twitter</a></li>
+      <li><a href="https://www.reddit.com/r/adventofcode/">Reddit</a></li>
+      <li><a href="https://twitch.tv">Twitch</a></li>
+    </ul>
+  </ul>
+</section>
+
+<section>
+  <h2>SAP Community</h2>
+<ul>
+  <li><a href="https://github.com/joltdx/abap-advent-2020">Jörgen Lindqvist, ABAP</a></li>
+  <li><a href="https://github.com/marcellourbani/adventofcode_2020">Marcello Urbani, Haskell</a></li>
+  <li><a href="https://github.com/nadiasacara/AdventOfCode2020">Nadia Sacara, ABAP</a></li>
+  <li><a href="https://github.com/ceedee666/aoc_2020">Christian Drumm, Python</a></li>
+  <li><a href="https://github.com/hendrik77/Advent_of_Code_2020">Hendrik Neumann, ABAP</a></li>
+  <li><a href="https://github.com/g-back/abap-advent-2020">Goran Back, ABAP</a></li>
+  <li><a href="https://github.com/larshp/abap-advent-2020">Lars Hvam, ABAP</a></li>
+</ul>
+</section>
+
+<section>
+  <img src="img/twist.jpg" class="plain">
+</section>
+
+<section>
+  <h2>My twist</h2>
+  <ul>
+    <li>In ABAP</li>
+    <li>Using somewhat modern ABAP syntax(740+)</li>
+    <li>Share code on <a href="https://github.com/larshp/abap-advent-2020">GitHub</a></li>
+    <li>Run on <a href="https://nodejs.org/en/">Node.js</a></li>
+    <li><i><a href="https://www.youtube.com/watch?v=Y2xu0XULeao">Wait, what?</a></i></li>
+    <li><a href="https://www.martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a>: Run unit tests</li>
+    <li>Continuous Integration: Static analysis</li>
+  </ul>
+</section>
+
+<section>
+  <h1>1. Git</a>
+</section>
 
 <section>
   <table><tr><td>
@@ -67,7 +141,7 @@ Will answer questions in the end if time permits<br>
   Hosting service for git, free for public projects.<br>
   <ul>
   <li>Provides graphical web interface</li>
-  <li>Collaboration via Pull Requests</li>
+  <li>Collaboration via <a href="https://guides.github.com/introduction/flow/">Pull Requests</a></li>
   </ul>
   </td></tr></table>
 </section>
@@ -99,7 +173,20 @@ Will answer questions in the end if time permits<br>
 </section>
 
 <section>
-<h1>abaplint</h1>
+  <h3>Resources</h3>
+  <ul>
+    <li><a href="https://abapgit.org">https://abapgit.org</a>
+    <li><a href="https://docs.abapgit.org">https://docs.abapgit.org</a>
+    <li><a href="https://dotabap.org">https://dotabap.org</a>
+  </ul>
+</section>
+
+<section>
+  <h1>2. Static Analysis</a>
+</section>
+
+<section>
+<h2>abaplint</h2>
 
 <i>lint, or a linter, is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs</i>
 <br>
@@ -110,18 +197,18 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 </section>
 
 <section>
-<h1>syntax</h1>
-<a href="https://syntax.abaplint.org"><img src="img/syntax.svg" class="plain"></a>
+  <h2>syntax</h2>
+  <a href="https://syntax.abaplint.org"><img src="img/syntax.svg" class="plain"></a>
 </section>
 
 <section>
-<h3><a href="https://rules.abaplint.org">rules.abaplint.org</a></h3>
-<iframe width="900" height="500" src="https://rules.abaplint.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3><a href="https://rules.abaplint.org">rules.abaplint.org</a></h3>
+  <iframe width="900" height="500" src="https://rules.abaplint.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section>
-<h3><a href="https://playground.abaplint.org">playground.abaplint.org</a></h3>
-<iframe width="900" height="500" src="https://playground.abaplint.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3><a href="https://playground.abaplint.org">playground.abaplint.org</a></h3>
+  <iframe width="900" height="500" src="https://playground.abaplint.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section>
@@ -129,20 +216,61 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 <ul>
 <li><a href="https://github.com/abaplint/abaplint/blob/master/docs/ci/README.md">Continuous Integration</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abaplint">vscode extension</a></li>
-<li><a href="https://github.com/abaplint/abaplint-cloud-foundry">ATC/Code Inspector</a></li>
+<li><a href="https://github.com/abaplint/abaplint-sci-server">ATC/Code Inspector Integration</a></li>
 </ul>
 </section>
 
 <section>
-<h1>Aaand then</h1>
-<ul>
-<li>More quick fixes</li>
-<li><a href="https://github.com/open-abap">Serverless ABAP</a></li>
-<li>Automatic Upport (abapGit to 740sp08)</li>
-<li>Automatic Downport (abapGit to 702)</li>
-</ul>
-<br><br>
-<i class="fas fa-user-clock"></i>
+  <h1>3. Automatic Downport</a>
+</section>
+
+<section>
+  <a href="https://rules.abaplint.org/downport/">https://rules.abaplint.org/downport/</a>
+  <pre>
+    CLASS lcl_bar DEFINITION.
+    ENDCLASS.
+    CLASS lcl_bar IMPLEMENTATION.
+    ENDCLASS.
+
+    FORM foo.
+      DATA(lo_moo) = NEW lcl_bar( ).
+    ENDFORM.
+  </pre>
+  <a href="https://playground.abaplint.org">https://playground.abaplint.org</a>
+</section>
+
+<section>
+  <h1>4. Transpiling</a>
+</section>
+
+<section>
+  <pre>LOOP AT lt_strings INTO lv_string1.
+  LOOP AT lt_strings INTO lv_string2.
+    IF lv_string1 + lv_string2 = 2020.
+      output = lv_string1 * lv_string2.
+      output = condense( output ).
+      WRITE output.
+      RETURN.
+    ENDIF.
+  ENDLOOP.
+ENDLOOP.</pre><hr>
+  <pre>for (const unique1 of abap.statements.loop(lt_strings)) {
+  lv_string1.set(unique1);
+  for (const unique2 of abap.statements.loop(lt_strings)) {
+    lv_string2.set(unique2);
+    if (abap.compare.eq(abap.operators.add(lv_string1,lv_string2), constant_2020)) {
+      output.set(abap.operators.multiply(lv_string1,lv_string2));
+      output.set(abap.builtin.condense(output));
+      abap.statements.write(output);
+      return;
+    }
+  }
+}</pre>
+</section>
+
+<section>
+  <h2>5. All Together Now</h2>
+  <a href="https://github.com/larshp/abap-advent-2020">https://github.com/larshp/abap-advent-2020</a>
 </section>
 
 <section>
@@ -165,10 +293,39 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 <section>
 <h2>Links</h2>
 <table><tr><td>
-<a href="https://abapgit.org">https://abapgit.org</a><br>
-<a href="https://abaplint.org">https://abaplint.org</a><br>
-<a href="https://dotabap.org">https://dotabap.org</a><br>
+<a href="https://abapgit.org">abapgit.org</a><br>
+<a href="https://abaplint.org">abaplint.org</a><br>
+<a href="https://dotabap.org">dotabap.org</a><br>
 </td></tr></table>
+</section>
+
+<section>
+  <h2>Continuous Integration?</h2>
+    ???
+    Jeninks
+    Exact + Fast feedback
+</section>
+
+<section>
+  <h1>Disclaimer</h1>
+  <img src="img/const.gif" class="plain">
+  <br>
+  Open source
+  <br>
+  <br>
+  Test in sandbox
+</section>
+
+<section>
+  <h2>Aaand then</h2>
+  <ul>
+  <li>More quick fixes</li>
+  <li><a href="https://github.com/open-abap">Serverless ABAP</a></li>
+  <li>Automatic Upport (abapGit to 740sp08)</li>
+  <li>Automatic Downport (abapGit to 702)</li>
+  </ul>
+  <br><br>
+  <i class="fas fa-user-clock"></i>
 </section>
 
 </div>
