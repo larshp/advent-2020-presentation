@@ -123,6 +123,10 @@ Puzzle answer is 1721 * 299 = <u>514579</u>
 </section>
 
 <section>
+  <h1>1. Git</a>
+</section>
+
+<section>
   <table><tr><td>
   <b><i class="fa fa-git fa-2x plain"></i></b><br>
   Decentralized version control system, it allows you to:<br>
@@ -178,8 +182,7 @@ Puzzle answer is 1721 * 299 = <u>514579</u>
 </section>
 
 <section>
-<h2>Continuous Integration?</h2>
-  sdf
+  <h1>2. Static Analysis</a>
 </section>
 
 <section>
@@ -213,20 +216,61 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 <ul>
 <li><a href="https://github.com/abaplint/abaplint/blob/master/docs/ci/README.md">Continuous Integration</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abaplint">vscode extension</a></li>
-<li><a href="https://github.com/abaplint/abaplint-cloud-foundry">ATC/Code Inspector</a></li>
+<li><a href="https://github.com/abaplint/abaplint-sci-server">ATC/Code Inspector Integration</a></li>
 </ul>
 </section>
 
 <section>
-<h2>Aaand then</h2>
-<ul>
-<li>More quick fixes</li>
-<li><a href="https://github.com/open-abap">Serverless ABAP</a></li>
-<li>Automatic Upport (abapGit to 740sp08)</li>
-<li>Automatic Downport (abapGit to 702)</li>
-</ul>
-<br><br>
-<i class="fas fa-user-clock"></i>
+  <h1>3. Automatic Downport</a>
+</section>
+
+<section>
+  <a href="https://rules.abaplint.org/downport/">https://rules.abaplint.org/downport/</a>
+  <pre>
+    CLASS lcl_bar DEFINITION.
+    ENDCLASS.
+    CLASS lcl_bar IMPLEMENTATION.
+    ENDCLASS.
+
+    FORM foo.
+      DATA(lo_moo) = NEW lcl_bar( ).
+    ENDFORM.
+  </pre>
+  <a href="https://playground.abaplint.org">https://playground.abaplint.org</a>
+</section>
+
+<section>
+  <h1>4. Transpiling</a>
+</section>
+
+<section>
+  <pre>LOOP AT lt_strings INTO lv_string1.
+  LOOP AT lt_strings INTO lv_string2.
+    IF lv_string1 + lv_string2 = 2020.
+      output = lv_string1 * lv_string2.
+      output = condense( output ).
+      WRITE output.
+      RETURN.
+    ENDIF.
+  ENDLOOP.
+ENDLOOP.</pre><hr>
+  <pre>for (const unique1 of abap.statements.loop(lt_strings)) {
+  lv_string1.set(unique1);
+  for (const unique2 of abap.statements.loop(lt_strings)) {
+    lv_string2.set(unique2);
+    if (abap.compare.eq(abap.operators.add(lv_string1,lv_string2), constant_2020)) {
+      output.set(abap.operators.multiply(lv_string1,lv_string2));
+      output.set(abap.builtin.condense(output));
+      abap.statements.write(output);
+      return;
+    }
+  }
+}</pre>
+</section>
+
+<section>
+  <h2>5. All Together Now</h2>
+  <a href="https://github.com/larshp/abap-advent-2020">https://github.com/larshp/abap-advent-2020</a>
 </section>
 
 <section>
@@ -249,10 +293,17 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
 <section>
 <h2>Links</h2>
 <table><tr><td>
-<a href="https://abapgit.org">https://abapgit.org</a><br>
-<a href="https://abaplint.org">https://abaplint.org</a><br>
-<a href="https://dotabap.org">https://dotabap.org</a><br>
+<a href="https://abapgit.org">abapgit.org</a><br>
+<a href="https://abaplint.org">abaplint.org</a><br>
+<a href="https://dotabap.org">dotabap.org</a><br>
 </td></tr></table>
+</section>
+
+<section>
+  <h2>Continuous Integration?</h2>
+    ???
+    Jeninks
+    Exact + Fast feedback
 </section>
 
 <section>
@@ -263,6 +314,18 @@ Custom open source, everything in <a href="https://www.typescriptlang.org">TypeS
   <br>
   <br>
   Test in sandbox
+</section>
+
+<section>
+  <h2>Aaand then</h2>
+  <ul>
+  <li>More quick fixes</li>
+  <li><a href="https://github.com/open-abap">Serverless ABAP</a></li>
+  <li>Automatic Upport (abapGit to 740sp08)</li>
+  <li>Automatic Downport (abapGit to 702)</li>
+  </ul>
+  <br><br>
+  <i class="fas fa-user-clock"></i>
 </section>
 
 </div>
